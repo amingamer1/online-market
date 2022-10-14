@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../Fonts/Vazir.eot");
+  src: url("../Fonts/Vazir.eot?#iefix") format("FontName-opentype"), url("../Fonts/Vazir.woff") format("woff"), url("../Fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: Vazir;
+}
+
+.cart-back {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.orderBox {
+  bottom: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.clearBtn {
+  left: 5px;
+  top: 5px;
+}
+
+.proList {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

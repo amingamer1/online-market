@@ -1,0 +1,32 @@
+@import "./basicSetups";
+@import "./variables";
+
+
+
+// دایره کنار سبد خرید
+.cart-back {
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+}
+
+//  جعبه سبزرنگ زیر عکس محصولات
+.orderBox {
+   bottom: 5px;
+   right: 5px;
+   width: 35px;
+   height: 35px;
+   line-height: 35px;
+}
+
+// دکمه پاک کردن تعداد سفارش
+.clearBtn {
+   left: 5px;
+   top: 5px;
+}
+
+// پاک کردن لیست استایل محصولات
+.proList {
+   list-style: none;
+}
