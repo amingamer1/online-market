@@ -3,12 +3,12 @@ import { MdClear } from 'react-icons/md'
 
 function ProductItems({ items, myOrder, setMyOrder }) {
 
-
     const [buy, setBuy] = useState(parseInt(items.ordernumber))
     useEffect(() => {
         setMyOrder(myOrder + 1)
         items.ordernumber = buy
     }, [buy]);
+
     return (
         <div className=" card mb-3">
             <div className="row g-0">

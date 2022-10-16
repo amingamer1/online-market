@@ -15,6 +15,7 @@ function AddProdocts() {
     const newPrice = useRef()
     const newSrc = useRef()
     const newCat = useRef()
+
     function submit(e) {
         e.preventDefault();
         const uData = {
@@ -34,15 +35,14 @@ function AddProdocts() {
         newSrc.current.value = ""
         newCat.current.value = ""
         alert("محصول با موفقیت اضافه شد")
-        //----------------
+        //------- pushData to JSON file ---------
         myData.push(uData)
-        console.log(myData);
     }
 
     return (
         <div className='row '>
             <div className=' col-11 col-lg-6  mx-auto border  p-4 rounded-4 mt-4 '>
-                <form action="" onSubmit={submit}>
+                <form onSubmit={submit}>
                     <div className='mb-3'>
                         <label htmlFor="title" className='form-label'> <MdSubtitles /> عنوان محصول : </label>
                         <input ref={newTitle} type="text" name="" id="title" className='form-control' placeholder='عنوان محصول خود را وارد نمایید' />
@@ -66,7 +66,7 @@ function AddProdocts() {
                                 <option key={i}>{value}</option>)}
                         </select>
                         <button type='button' title='اضافه کردن دسته بندی جدید' className='btn btn-success col-auto text-center ms-1' onClick={() => {
-                            let newCategory = prompt("Please enter your new Category");
+                            let newCategory = prompt("لطفا عنوان دسته بندی جدید خود را وارد نمایید : ");
                             newCategory && //check if newCategory isnt empty
                                 cat.push(newCategory) // push data inside your json file 
                             refresh()

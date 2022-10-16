@@ -5,6 +5,7 @@ import { withGlobalState } from 'react-globally'
 
 
 function ProductList({ pFilter, catFilters, setGlobalState, globalState }) {
+
     const [order, setOrder] = useState(globalState.totalOrder)
     useEffect(() => {
         setGlobalState(() => ({
