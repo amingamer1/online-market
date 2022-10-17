@@ -11,8 +11,8 @@ function Products() {
 
     return (
         <div className='row px-0'>
-            <div className='col-lg-3 cols  mx-lg-0 pe-4 px-lg-0 ps-lg-2'><Aside catFilter={categoryFilters} setCatFilter={setCategoryFilters} priceFilter={priceFilters} setPriceFilter={setPriceFilters} /></div>
-            <div className='col-lg-9 cols px-lg-0'><ProductList catFilters={categoryFilters} pFilter={priceFilters} /></div>
+            <aside className='col-lg-3 cols  mx-lg-0 pe-4 px-lg-0 ps-lg-2'><Aside catFilter={categoryFilters} setCatFilter={setCategoryFilters} priceFilter={priceFilters} setPriceFilter={setPriceFilters} /></aside>
+            <section className='col-lg-9 cols px-lg-0'><ProductList catFilters={categoryFilters} pFilter={priceFilters} /></section>
         </div>
 
     );
