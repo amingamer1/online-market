@@ -26,12 +26,15 @@ function ProductItems({ items, myOrder, setMyOrder }) {
                         <p className="card-text">{items.description}</p>
                         <p className="card-text"><span className='text-danger'>دسته بندی :</span> {items.category}</p>
                         <button className="btn btn-success w-100 px-1" onClick={() => (setBuy(buy + 1))} >{items.price} تومان </button>
-                        <button className="clearBtn btn btn-danger position-absolute px-2 py-1" onClick={() => (setBuy(0))} ><MdClear /></button>
+                        <button className="clearBtn btn btn-danger position-absolute px-2 py-1" onClick={() => {
+                            setBuy(0)
+                            setMyOrder(myOrder - buy - 1)
+                        }} ><MdClear /></button>
                     </div>
                 </div>
                 {/* ---------end--------- */}
             </div>
-        </div>);
+        </div >);
 }
 
 export default ProductItems;
